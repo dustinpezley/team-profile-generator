@@ -1,0 +1,10 @@
+:root {
+  --nav-color: var(#e84756);
+  --card-color: var(#0077f7);
+  --card-grey: var(#f6f7f9);
+  --color-white: var(#ffffff);
+}
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
