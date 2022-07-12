@@ -10,9 +10,6 @@ const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 
-// Open file when created
-const open = require('open');
-
 // Team array
 const teamArray = [];
 
@@ -204,7 +201,7 @@ const writeFile = data => {
       console.log(err);
       return;
     } else {
-      console.log('Team profile created.')
+      console.log('Team profile created in directory /dist/index.html.')
     }
   })
 }
@@ -217,9 +214,6 @@ addManager()
   // .then(html => {
   //   return writeFile(html);
   // })
-  .then(async () => {
-    await open('index.html', {"wait":true})
-  })
   .catch(err => {
     console.log(err);
   });
